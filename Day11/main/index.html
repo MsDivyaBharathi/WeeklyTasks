@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+        <style>
+          
+            #container {
+                width:60%;
+                border-color:lightgray;
+                border-width: 2px;
+                border-style: solid;
+                margin: auto;
+                padding-left:10px;
+                padding-right: 0px;
+                padding-bottom: 10px;
+                margin-top: 20px;
+            }
+            tr:nth-child(even) {
+                background-color: lightgray;
+                }
+            tr,th{
+            padding-left:0px;
+            width:140px;
+            text-align: left;
+            border: none;
+           }
+          td{
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: center;
+            
+          }
+          textarea{
+            display: block;
+            width:90%; 
+          }
+          #likely
+          {
+            width:91%;
+            margin-top: 0px;
+          }
+        h6{
+            padding: 2px;
+            margin:  4px;;
+        }
+        #star{
+          color: gold;
+        }
+          
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <form action="">
+                <label>Name<span style="color: red;">*</span></label><br>
+                <input type="text" id="fname" name="fname">
+                <input type="text" id="lname" name="lname"><br>
+                <span>First</span>  <span style="margin-left: 155px;">Last</span><br><br>
+                <label for="email">Email<span style="color: red;">*</span></label><br>
+                <input type="text" style="width:335px ;" id="email" name="email">
+                <h4><b>Your Experience<span style="color: red;">*</span></b></h4>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div id="star">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                </div>
+                  <p>overall how would you rate your experience with us</p>
+                  <h4><b>how satisfied are you with<span style="color: red;">*</span></b></h4>
+                  <table>
+                    <tr>
+                      <td></td>
+                      <td>Very Unsatisfied</td>
+                      <td>Unsatisfied</td>
+                      <td>Neutral</td>
+                      <td>Satisfied</td>
+                      <td>Very Satisfied</td>
+                    </tr>
+                     <tr>
+                      <th>purchase</th>
+                      <td> <input type="radio" id="radio_input_1" name="radio_group" value="radio1"></td>
+                      <td> <input type="radio" id="radio_input_2" name="radio_group" value="radio2"></td>
+                      <td> <input type="radio" id="radio_input_3" name="radio_group" value="radio3"></td>
+                      <td> <input type="radio" id="radio_input_4" name="radio_group" value="radio4"></td>
+                      <td> <input type="radio" id="radio_input_5" name="radio_group" value="radio5"></td>
+                    </tr> 
+                    <tr>
+                      <th>service</th>
+                      <td> <input type="radio" id="radio_input_1" name="radio_groups" value="radio1"></td>
+                      <td> <input type="radio" id="radio_input_2" name="radio_groups" value="radio2"></td>
+                      <td> <input type="radio" id="radio_input_3" name="radio_groups" value="radio3"></td>
+                      <td> <input type="radio" id="radio_input_4" name="radio_groups" value="radio4"></td>
+                      <td> <input type="radio" id="radio_input_5" name="radio_groups" value="radio5"></td>
+                    </tr>
+                    <tr>
+                      <th>Company Overall</th>
+                      <td> <input type="radio" id="radio_input_1" name="radio_groupc" value="radio1"></td>
+                      <td> <input type="radio" id="radio_input_2" name="radio_groupc" value="radio2"></td>
+                      <td> <input type="radio" id="radio_input_3" name="radio_groupc" value="radio3"></td>
+                      <td> <input type="radio" id="radio_input_4" name="radio_groupc" value="radio4"></td>
+                      <td> <input type="radio" id="radio_input_5" name="radio_groupc" value="radio5"></td>
+                    </tr>
+                  </table>
+                  <h4><b>how likely are you to<span style="color: red;">*</span></b></h4>
+                  <table id="likely">
+                    <tr>
+                      <td></td>
+                      <td>Very unlikely</td>
+                      <td>unlikely</td>
+                      <td>Neutral</td>
+                      <td>Likely</td>
+                      <td>Very Likely</td>
+                    </tr>
+                     <tr>
+                      <th>Buy From Us again</th>
+                      <td> <input type="radio" id="radio_input_1" name="radio_groupb" value="radio1"></td>
+                      <td> <input type="radio" id="radio_input_2" name="radio_groupb" value="radio2"></td>
+                      <td> <input type="radio" id="radio_input_3" name="radio_groupb" value="radio3"></td>
+                      <td> <input type="radio" id="radio_input_4" name="radio_groupb" value="radio4"></td>
+                      <td> <input type="radio" id="radio_input_5" name="radio_groupb" value="radio5"></td>
+                    </tr> 
+                    <tr>
+                      <th>Recommend our product to others</th>
+                      <td> <input type="radio" id="radio_input_1" name="radio_groupr" value="radio1"></td>
+                      <td> <input type="radio" id="radio_input_2" name="radio_groupr" value="radio2"></td>
+                      <td> <input type="radio" id="radio_input_3" name="radio_groupr" value="radio3"></td>
+                      <td> <input type="radio" id="radio_input_4" name="radio_groupr" value="radio4"></td>
+                      <td> <input type="radio" id="radio_input_5" name="radio_groupr" value="radio5"></td>
+                    </tr>
+                    <tr>
+                      <th>Recommend our Company to others</th>
+                      <td> <input type="radio" id="radio_input_1" name="radio_grouprc" value="radio1"></td>
+                      <td> <input type="radio" id="radio_input_2" name="radio_grouprc" value="radio2"></td>
+                      <td> <input type="radio" id="radio_input_3" name="radio_grouprc" value="radio3"></td>
+                      <td> <input type="radio" id="radio_input_4" name="radio_grouprc" value="radio4"></td>
+                      <td> <input type="radio" id="radio_input_5" name="radio_grouprc" value="radio5"></td>
+                    </tr>
+                  </table>
+                  <h4><b>Additional comments or suggestion</b></h4>
+                  <textarea rows="4" cols="50"></textarea>
+                  <br>
+                <input type="submit" value="Submit">
+                <br>
+              </form> 
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Default Values for Form Elements</title>
+  <style>
+      .form-container
+      {
+        margin-left:150px;
+        margin-top:75px;
+      }
+        textarea
+       {
+       width:200px;
+       margin-left:50px;
+       }
+  </style>
+</head>
+<body>
+<div class="form-container">
+    <h1>FORM ELEMENTS WITH DEFAULT VALUES</h1>
+<form action="" method="post">
+
+  <!-- Text Input -->
+  <label for="text-input">Text Input:</label>
+  <input type="text" id="text-input" name="text-input" value="Default Text">
+
+  <br><br>
+
+  <!-- Email Input -->
+  <label for="email-input">Email Input:</label>
+  <input type="email" id="email-input" name="email-input" value="example@email.com">
+
+  <br><br>
+
+  <!-- Password Input -->
+  <label for="password-input">Password Input:</label>
+  <input type="password" id="password-input" name="password-input" value="password123">
+
+  <br><br>
+
+  <!-- Checkbox -->
+  <input type="checkbox" id="checkbox-input" name="checkbox-input" checked>
+  <label for="checkbox-input">Checkbox (Checked by Default)</label>
+
+  <br><br>
+
+  <!-- Radio Buttons -->
+  <input type="radio" id="radio-input-1" name="radio-input" value="option1" checked>
+  <label for="radio-input-1">Option 1 (Selected by Default)</label>
+  <br>
+  <input type="radio" id="radio-input-2" name="radio-input" value="option2">
+  <label for="radio-input-2">Option 2</label>
+
+  <br><br>
+
+  <!-- Textarea -->
+  <label for="textarea-input">Textarea:</label>
+  <textarea id="textarea-input" name="textarea-input">Default Textarea Content</textarea>
+
+  <br><br>
+
+  <!-- Select Dropdown -->
+  <label for="select-input">Select Dropdown:</label>
+  <select id="select-input" name="select-input">
+    <option value="option1">Option 1</option>
+    <option value="option2" selected>Option 2 (Selected by Default)</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+  <br><br>
+
+  <!-- Submit Button -->
+  <input type="submit" value="Submit">
+
+</form>
+</div>
+</body>
+</html>
+
+
+
+

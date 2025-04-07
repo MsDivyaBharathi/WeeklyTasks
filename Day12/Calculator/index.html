@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+        <h1 id="title">Calculator</h1>
+        <p id="description"> To do operation on numbers</p>
+       
+        <div class="calculator">
+            <input type="text" id="result" readonly>
+
+            <button style="color:red" onclick="clearResult()" id="clear">C</button>
+
+            <button onclick=" backspace()"><</button>
+
+            <button onclick="appendOperator('%')">%</button>
+
+            <button id="mul" style="color:blue;font-size: 20px;"  onclick="appendOperator('*')">*</button>
+            <br>
+            <button id="7" onclick="appendNumber('7')">7</button>
+            <button id="8" onclick="appendNumber('8')">8</button>
+            <button id="9" onclick="appendNumber('9')">9</button>
+            <button id="divide" style="color:blue;font-size: 20px;" onclick="appendOperator('/')">/</button>
+            <br>
+            <button id="4" onclick="appendNumber('4')">4</button>
+            <button id="5" onclick="appendNumber('5')">5</button>
+            <button id="6" onclick="appendNumber('6')">6</button>
+            <button id="subtract" style="color:blue;font-size: 20px;" onclick="appendOperator('-')">-</button>
+            <br>
+            <button id="1" onclick="appendNumber('1')">1</button>
+            <button id="2" onclick="appendNumber('2')">2</button>
+            <button id="3" onclick="appendNumber('3')">3</button>
+            <button id="add" style="color:blue;font-size: 20px;" onclick="appendOperator('+')">+</button>
+            <br>
+            <button value="0" onclick="appendNumber('0')">0</button>
+            <button value="00" onclick="appendNumber('00')">00</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button id="equal"  value="="  onclick=" calculateResult()">=</button>
+            <br>  
+          </div>
+    </body>
+</html>
